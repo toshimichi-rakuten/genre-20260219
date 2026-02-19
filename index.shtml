@@ -240,6 +240,19 @@
                         <span class="preview-link">View Page</span>
                     </div>
                 </a>
+
+                <a href="combined_pc_products.html" class="nav-card">
+                    <div class="card-header">
+                        <div class="card-icon">🛍️</div>
+                        <div class="card-title">統合ページ（PC版+商品グリッド）</div>
+                    </div>
+                    <div class="card-description">
+                        ECMテンプレートと商品グリッドを統合した完全版ページ。ヘッダー、フッター、商品一覧を含む。
+                    </div>
+                    <div class="card-footer">
+                        <span class="preview-link">View Page</span>
+                    </div>
+                </a>
             </div>
         </section>
     </div>
