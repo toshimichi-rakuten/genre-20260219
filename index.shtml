@@ -253,6 +253,19 @@
                         <span class="preview-link">View Page</span>
                     </div>
                 </a>
+
+                <a href="pc_index_with_products.html" class="nav-card">
+                    <div class="card-header">
+                        <div class="card-icon">📋</div>
+                        <div class="card-title">シンプル統合ページ</div>
+                    </div>
+                    <div class="card-description">
+                        ECMテンプレート（PC版インデックス）と商品グリッドを統合したシンプルなページ。Alcor商品データを使用。
+                    </div>
+                    <div class="card-footer">
+                        <span class="preview-link">View Page</span>
+                    </div>
+                </a>
             </div>
         </section>
     </div>
