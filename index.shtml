@@ -3,184 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品一覧</title>
+    <title>トップページ - プロジェクト一覧</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- ==================== ECM ==================== -->
-    <!--#include virtual="/com/js/c/ecm/group_inc/genre/genre_001_ecm_head.html"-->
-    <!-- ==================== /ECM ==================== -->
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
 
-    <!-- ==================== ECM ==================== -->
-    <!--#include virtual="/com/js/c/ecm/group_inc/genre/genre_001_ecm_utils_head.html"-->
-    <!-- ==================== /ECM ==================== -->
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .page-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-subtitle {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section-description {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .nav-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .nav-card.component-card {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+
+        .nav-card.component-card:hover {
+            border-color: #fcb69f;
+            box-shadow: 0 8px 24px rgba(252, 182, 159, 0.3);
+        }
+
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .preview-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 32px;
+            }
+
+            .section {
+                padding: 24px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .button-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1 class="page-title">プロジェクト一覧</h1>
+            <p class="page-subtitle">コンポーネントとページのプレビュー</p>
+        </header>
 
-<div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
-    <!-- アルコル商品表示エリア -->
-    <div
-      data-module-name="ecm-alcor"
-      data-alcor-type="normal"
-    >
-      <template data-alcor-output>
-        <div
-          class="d-grid d-grid-col-2 d-grid-gap-16 md-d-grid-col-4 md-d-grid-gap-32"
-          data-alcor-item-container
-        ></div>
-      </template>
+        <!-- コンポーネントセクション -->
+        <section class="section">
+            <h2 class="section-title">📦 コンポーネント</h2>
+            <p class="section-description">
+                再利用可能なUIコンポーネントの一覧です。各コンポーネントをクリックしてプレビューできます。
+            </p>
+            <div class="button-grid">
+                <a href="itemlist/sample-products.html" class="nav-card component-card">
+                    <div class="card-icon">🛍️</div>
+                    <div class="card-title">商品アイテム</div>
+                    <div class="card-description">
+                        Alcor商品データを表示するためのアイテムコンポーネント
+                    </div>
+                    <span class="preview-badge">プレビュー</span>
+                </a>
 
-      <template data-alcor-data>
-        <!-- Alcor Template -->
-        <div data-alcor-item>
-  <div data-key="itemname">コールマン ショルダーバッグ Coleman WALKER ウォーカー COOL SHOULDER MD クールショルダーMD 斜め掛けバッグ 8L A4 ボトルクーラー付き 500mlPET レジャー ハイキング アウトドア 普段使い ブランド メンズ レディース 男女兼用 通学 通勤 20代 30代 40代 50代 60代</div>
-  <div data-key="item-url">https://item.rakuten.co.jp/watermode/10010279/</div>
-  <div data-key="image-url">https://tshop.r10s.jp/watermode/cabinet/01304872/coolshouldermd-1-mm.jpg</div>
-  <div data-key="kakaku">6,490円</div>
-  <div data-key="review_star_avg"><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_half.gif"/></div>
-  <div data-key="reviewave">4.54</div>
-  <div data-key="reviewnum">265</div>
-  <div data-key="shopurl">watermode</div>
-  <div data-key="shopname">かばん専門ショップ　Water mode</div>
-</div>
-
-<div data-alcor-item>
-  <div data-key="itemname">半額【お買い得商品 5,390円OFF】入学式バッグ 卒業式バッグ 入園式 卒園式 卒業式 入学式 ママ セレモニーバッグ フォーマルバッグ PERENNE ペレンネ 20197 Xサイズ 送料無料 ハンドバッグ トートバッグ ショルダーバッグ レディースバッグ バッグ きれいめ 高見え</div>
-  <div data-key="item-url">https://item.rakuten.co.jp/perenne/20197/</div>
-  <div data-key="image-url">https://tshop.r10s.jp/perenne/cabinet/20197-1gr.jpg</div>
-  <div data-key="kakaku">5,390円</div>
-  <div data-key="review_star_avg"><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_half.gif"/></div>
-  <div data-key="reviewave">4.51</div>
-  <div data-key="reviewnum">1,290</div>
-  <div data-key="shopurl">perenne</div>
-  <div data-key="shopname">PERENNE 【ペレンネ公式】</div>
-</div>
-
-<div data-alcor-item>
-  <div data-key="itemname">本革 チェーンバッグ ショルダーバッグ レディース 【 barmed バルメド｜HAYNI ヘイニ 】チェーン ショルダー 牛革 キルティング シルバー金具 ゴールド金具 可愛い かわいい おしゃれ シンプル A4 上品 肩掛け オケージョン 観劇</div>
-  <div data-key="item-url">https://item.rakuten.co.jp/hayni/barmed/</div>
-  <div data-key="image-url">https://tshop.r10s.jp/hayni/cabinet/bag5/barmed-25aw1.jpg</div>
-  <div data-key="kakaku">20,000円</div>
-  <div data-key="review_star_avg"><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_half.gif"/></div>
-  <div data-key="reviewave">4.76</div>
-  <div data-key="reviewnum">67</div>
-  <div data-key="shopurl">hayni</div>
-  <div data-key="shopname">バッグミュージアム HAYNI ヘイニ</div>
-</div>
-
-<div data-alcor-item>
-  <div data-key="itemname">【公認販売店】 コールマン ショルダーバッグ 8L coleman クールショルダーMD CBS6011 メンズ レディース キッズ 斜め掛けバッグ</div>
-  <div data-key="item-url">https://item.rakuten.co.jp/alice0908/cbs1011/</div>
-  <div data-key="image-url">https://tshop.r10s.jp/alice0908/cabinet/colman/coleman2/2025csmd-top.jpg</div>
-  <div data-key="kakaku">6,490円</div>
-  <div data-key="review_star_avg"><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_half.gif"/></div>
-  <div data-key="reviewave">4.68</div>
-  <div data-key="reviewnum">250</div>
-  <div data-key="shopurl">alice0908</div>
-  <div data-key="shopname">かばんのミヤモト</div>
-</div>
-
-<div data-alcor-item>
-  <div data-key="itemname">半額【お買い得商品 4,840円OFF】軽い トートバッグ PERENNE ペレンネ トートバッグ 20150 送料無料 トートバッグ a4 ビジネスバッグ ビジネストート レディース レディースバッグ バッグ ショルダー 鞄 通勤バッグ 通勤 リクルート パソコン アフィリエイト</div>
-  <div data-key="item-url">https://item.rakuten.co.jp/perenne/20150/</div>
-  <div data-key="image-url">https://tshop.r10s.jp/perenne/cabinet/20150-1z.jpg</div>
-  <div data-key="kakaku">4,840円</div>
-  <div data-key="review_star_avg"><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_off.gif"/></div>
-  <div data-key="reviewave">4.49</div>
-  <div data-key="reviewnum">342</div>
-  <div data-key="shopurl">perenne</div>
-  <div data-key="shopname">PERENNE 【ペレンネ公式】</div>
-</div>
-
-<div data-alcor-item>
-  <div data-key="itemname">【WEB限定】ショルダーバッグ レディース ポケット ショルダー 旅行 斜めがけ 軽量 軽い 仕事 マザーズバッグ 多機能 コンパクト 通勤 カバン moz モズ 大人 バッグ 通学 メンズ 女性 男性 ビジネス プレゼント 北欧 ギフト 20代 30代 40代 50代 60代 70代 黒 ZZEI-28</div>
-  <div data-key="item-url">https://item.rakuten.co.jp/t-two-o/zzei-28/</div>
-  <div data-key="image-url">https://tshop.r10s.jp/t-two-o/cabinet/brands/moz/zzei-28-bx_251127rr.jpg</div>
-  <div data-key="kakaku">8,250円</div>
-  <div data-key="review_star_avg"><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_half.gif"/></div>
-  <div data-key="reviewave">4.72</div>
-  <div data-key="reviewnum">113</div>
-  <div data-key="shopurl">t-two-o</div>
-  <div data-key="shopname">鞄メーカー直営T2O ONLINE STORE</div>
-</div>
-
-<div data-alcor-item>
-  <div data-key="itemname">【刺繍可】【公式】エルエルビーン ボート アンド トート バッグ オープン トップ ミディアム | トートバッグ キャンバス メンズ ウィメンズ レディース アウトドア ブランド トートバック 綿 名入れ 刺繍 L.L.Bean LLBean llビーン</div>
-  <div data-key="item-url">https://item.rakuten.co.jp/llbean/rtc112636/</div>
-  <div data-key="image-url">https://tshop.r10s.jp/llbean/cabinet/08081320/08081321/08081322/boat_fv.jpg</div>
-  <div data-key="kakaku">11,000円</div>
-  <div data-key="review_star_avg"><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_half.gif"/></div>
-  <div data-key="reviewave">4.78</div>
-  <div data-key="reviewnum">76</div>
-  <div data-key="shopurl">llbean</div>
-  <div data-key="shopname">L.L.Bean公式オンラインストア</div>
-</div>
-
-<div data-alcor-item>
-  <div data-key="itemname">バッグ トート ラップリボンビッグトートピンクトリック マザーズバッグ ビッグ リボン 大きめ 大容量 鞄 かばん 旅行 ママバッグ　軽い はっ水 軽量 お泊り オールシーズン お出かけ 出産 七五三 推し活 推し活バッグ</div>
-  <div data-key="item-url">https://item.rakuten.co.jp/pinktrick/sf00124p/</div>
-  <div data-key="image-url">https://tshop.r10s.jp/pinktrick/cabinet/bag/bigtote/251107/sf00124p_thum.jpg</div>
-  <div data-key="kakaku">5,940円</div>
-  <div data-key="review_star_avg"><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_on.gif"/><img src="https://r.r10s.jp/com/img/pdt/img/star_half.gif"/></div>
-  <div data-key="reviewave">4.53</div>
-  <div data-key="reviewnum">88</div>
-  <div data-key="shopurl">pinktrick</div>
-  <div data-key="shopname">pink trick直営店（リボンのお店）</div>
-</div>
-        <!-- /Alcor template -->
-      </template>
-
-      <template data-alcor-item-template>
-        <div class="ecm-alcor">
-          <a
-            class="ecm-alcor-image-link"
-            href="###item-url###"
-          >
-            <img
-              class="w-full h-full aspect-ratio-1x1 object-contain"
-              src="https://r.r10s.jp/com/img/home/t.gif?resize=340:340"
-              data-lazy-loading="###image-url###?_ex=680:680"
-              alt=""
-            />
-          </a>
-          <div class="ecm-alcor-body">
-            <a
-              class="ecm-alcor-name clamp-2"
-              href="###item-url###"
-              >###itemname###</a
-            >
-            <a
-              class="ecm-alcor-price"
-              href="###item-url###"
-            >
-              <p class="ecm-alcor-price-num">###kakaku###</p>
-            </a>
-            <div class="ecm-alcor-review">
-              <span>###review_star_avg###</span>
-              <span class="ecm-alcor-review-ave">###reviewave###</span>
-              <span class="color-gray-2 ml-4">(###reviewnum###件)</span>
+                <!-- 今後追加されるコンポーネント用のプレースホルダー -->
+                <!-- 
+                <a href="components/other-component.html" class="nav-card component-card">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-title">その他のコンポーネント</div>
+                    <div class="card-description">説明文</div>
+                    <span class="preview-badge">プレビュー</span>
+                </a>
+                -->
             </div>
-            <a
-              class="ecm-alcor-shop-link"
-              href="https://www.rakuten.co.jp/###shopurl###"
-            >
-              <i
-                class="ecm-icon-shop-outlined"
-                aria-hidden="true"
-              ></i>
-              <span class="clamp-1">###shopname###</span>
-            </a>
-          </div>
-        </div>
-      </template>
+        </section>
+
+        <!-- ページセクション -->
+        <section class="section">
+            <h2 class="section-title">📄 ページ</h2>
+            <p class="section-description">
+                完成したページの一覧です。各ページをクリックして表示内容を確認できます。
+            </p>
+            <div class="button-grid">
+                <a href="products.shtml" class="nav-card">
+                    <div class="card-icon">🛒</div>
+                    <div class="card-title">商品一覧ページ</div>
+                    <div class="card-description">
+                        楽天商品をグリッド表示する商品一覧ページ（Alcor対応）
+                    </div>
+                    <span class="preview-badge">プレビュー</span>
+                </a>
+
+                <!-- 今後追加されるページ用のプレースホルダー -->
+                <!-- 
+                <a href="other-page.shtml" class="nav-card">
+                    <div class="card-icon">📱</div>
+                    <div class="card-title">その他のページ</div>
+                    <div class="card-description">説明文</div>
+                    <span class="preview-badge">プレビュー</span>
+                </a>
+                -->
+            </div>
+        </section>
     </div>
-</div>
-
-    <!-- ==================== ECM ==================== -->
-    <!--#include virtual="/com/js/c/ecm/group_inc/genre/genre_001_ecm_jquery.html"-->
-    <!-- ==================== /ECM ==================== -->
-
-    <!-- ==================== ECM ==================== -->
-    <!--#include virtual="/com/js/c/ecm/group_inc/genre/genre_001_ecm_body_pc.html"-->
-    <!-- ==================== /ECM ==================== -->
-
 </body>
 </html>
