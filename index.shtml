@@ -215,19 +215,6 @@
             </div>
 
             <div class="button-grid">
-                <a href="products.shtml" class="nav-card">
-                    <div class="card-header">
-                        <div class="card-icon">📄</div>
-                        <div class="card-title">商品一覧ページ</div>
-                    </div>
-                    <div class="card-description">
-                        ヘッダー、フッターを含み、商品グリッドを表示する完全なページ構成のプレビュー。
-                    </div>
-                    <div class="card-footer">
-                        <span class="preview-link">View Page</span>
-                    </div>
-                </a>
-
                 <a href="20251112_pc_index.html" class="nav-card">
                     <div class="card-header">
                         <div class="card-icon">📄</div>
