@@ -227,6 +227,19 @@
                         <span class="preview-link">View Page</span>
                     </div>
                 </a>
+
+                <a href="20251112_pc_index.html" class="nav-card">
+                    <div class="card-header">
+                        <div class="card-icon">📄</div>
+                        <div class="card-title">PC版インデックス</div>
+                    </div>
+                    <div class="card-description">
+                        楽天市場ジャンルページのPCレイアウトテンプレート。ECMコンポーネントを使用した構成。
+                    </div>
+                    <div class="card-footer">
+                        <span class="preview-link">View Page</span>
+                    </div>
+                </a>
             </div>
         </section>
     </div>
