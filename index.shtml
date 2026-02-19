@@ -192,13 +192,13 @@
             </div>
 
             <div class="button-grid">
-                <a href="itemlist/sample-products.html" class="nav-card component-card">
+                <a href="products.shtml" class="nav-card component-card">
                     <div class="card-header">
-                        <div class="card-icon">📦</div>
-                        <div class="card-title">商品アイテム</div>
+                        <div class="card-icon">🔲</div>
+                        <div class="card-title">商品グリッドコンポーネント</div>
                     </div>
                     <div class="card-description">
-                        Alcor商品データを表示するための、グリッドレイアウト用アイテムカードコンポーネント。
+                        Alcor商品データを使用した商品グリッド表示コンポーネント。ECM Alcorテンプレートを活用。
                     </div>
                     <div class="card-footer">
                         <span class="preview-link">View Component</span>
