@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Rakuma Design System - Static HTML component library with comprehensive documentation",
   "scripts": {
-    "dev": "npx serve -l 3000 .",
+    "dev": "node ssi-server.js",
     "start": "npx serve -l 3000 .",
     "dev:ssi": "npx ssi-server -p 3000",
     "ssi": "npx ssi-server -p 3000"
