@@ -1,0 +1,1289 @@
+<!doctype html>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>【楽天市場】バッグ・かばん特集｜人気のバッグが勢揃い</title>
+  <meta name="description" content="トートバッグ、ショルダーバッグなど人気のバッグが大集合。通勤・通学・お出かけに最適なアイテムを多数ご紹介" />
+  <meta name="keywords" content="バッグ,かばん,トートバッグ,ショルダーバッグ,楽天市場,通販" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="format-detection" content="telephone=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --crimson: #BF0000;
+      --gray-darker: #333;
+      --gray-mid: #717171;
+      --gray-light: #D1D1D1;
+      --gray-bg: #F7F7F7;
+      --white: #FFF;
+      --black-8: rgba(0, 0, 0, 0.08);
+      --black-20: rgba(0, 0, 0, 0.20);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', -apple-system, sans-serif;
+      background: var(--white);
+      color: var(--gray-darker);
+      min-width: 1024px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: var(--white);
+      width: 100%;
+    }
+
+    .header-inner {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 16px 24px;
+    }
+
+    .header-main {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header-logo svg { display: block; flex-shrink: 0; }
+
+    .header-search {
+      display: flex;
+      flex: 1;
+      height: 40px;
+      border: 2px solid var(--crimson);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .search-input-area {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      padding: 0 12px;
+      gap: 4px;
+      overflow: hidden;
+    }
+
+    .search-placeholder {
+      color: var(--gray-mid);
+      font-size: 14px;
+      font-weight: 300;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .search-btn {
+      display: flex;
+      width: 40px;
+      align-items: center;
+      justify-content: center;
+      background: var(--crimson);
+      border: none;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+    }
+
+    .header-icon-btns {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-icon-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      cursor: pointer;
+      position: relative;
+      text-decoration: none;
+    }
+
+    .icon-btn-icon { width: 24px; height: 24px; position: relative; }
+
+    .icon-btn-label {
+      color: var(--gray-darker);
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.3;
+      white-space: nowrap;
+    }
+
+    .notification-badge {
+      position: absolute;
+      top: -4px;
+      right: -8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 16px;
+      padding: 0 4px;
+      border-radius: 16px;
+      background: var(--crimson);
+      color: var(--white);
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .member-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .member-points-area {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding-top: 2px;
+    }
+
+    .member-name-row {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .member-name {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-darker);
+    }
+
+    .member-points-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 1px;
+    }
+
+    .points-number {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--gray-darker);
+      line-height: 1;
+    }
+
+    .points-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gray-darker);
+      line-height: 1.3;
+    }
+
+    .member-rate-area {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding-top: 2px;
+      overflow: hidden;
+    }
+
+    .member-rate-label {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-darker);
+    }
+
+    .member-rate-row {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .rate-panel {
+      display: flex;
+      min-width: 44px;
+      padding: 4px;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 4px;
+      border: 1px solid var(--gray-light);
+      background: linear-gradient(180deg, #EBEBEB 0%, #EBEBEB 50.51%, rgba(235,235,235,0) 50.52%), #F7F7F7;
+    }
+
+    .rate-number {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--crimson);
+      line-height: 1;
+      text-align: center;
+    }
+
+    .rate-unit {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--gray-darker);
+    }
+
+    .header-border {
+      height: 1px;
+      background: var(--black-8);
+    }
+
+    /* ===== BREADCRUMB ===== */
+    .page-breadcrumb {
+      padding: 12px 32px;
+      max-width: 1024px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      overflow: hidden;
+    }
+
+    .breadcrumb-link {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-darker);
+      text-decoration: underline;
+    }
+
+    .breadcrumb-link-muted {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-mid);
+      text-decoration: underline;
+    }
+
+    /* ===== KANBAN BANNER ===== */
+    .page-kanban { width: 100%; }
+
+    .kanban-image {
+      width: 100%;
+      height: 360px;
+      background: var(--gray-light);
+    }
+
+    .kanban-text-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+      margin-top: -20px;
+      position: relative;
+    }
+
+    .kanban-text-inner {
+      max-width: 960px;
+      width: 100%;
+      padding: 12px 16px;
+    }
+
+    .kanban-lead-text {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--gray-darker);
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .page-contents {
+      background: var(--white);
+      padding: 32px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .content-container {
+      width: 1024px;
+      padding: 16px 32px;
+    }
+
+    /* ===== SECTION TITLE ===== */
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 0;
+    }
+
+    .section-title {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--gray-darker);
+      text-align: center;
+      line-height: 1;
+    }
+
+    .title-underline {
+      width: 120px;
+      height: 2px;
+      background: var(--gray-darker);
+    }
+
+    /* ===== 2-COLUMN PRODUCT GRID ===== */
+    .product-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .product-card-2col {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .product-card-img-2col {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      background: var(--gray-light);
+      overflow: hidden;
+      display: block;
+    }
+
+    .product-card-img-2col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-top: 12px;
+    }
+
+    .product-catch {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gray-darker);
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+    }
+
+    .product-name {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--gray-darker);
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+    }
+
+    .product-price-row {
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .product-price-2col {
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--crimson);
+      line-height: 1;
+    }
+
+    .product-price-2col .price-num { font-weight: 500; }
+    .product-price-2col .price-yen { font-weight: 700; }
+
+    .product-free-shipping {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--crimson);
+      line-height: 1.3;
+    }
+
+    .product-shop-row {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      overflow: hidden;
+    }
+
+    .product-shop-name {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--gray-mid);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ===== 3-COLUMN PRODUCT GRID ===== */
+    .product-grid-3col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .product-card-3col {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .product-card-img-3col {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: var(--gray-light);
+      overflow: hidden;
+      display: block;
+    }
+
+    .product-card-img-3col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-card-body-3col {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding-top: 8px;
+    }
+
+    .product-name-3col {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--gray-darker);
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+
+    .product-price-3col {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--crimson);
+      line-height: 1;
+    }
+
+    /* ===== EVENT FOOTER / GENRE ===== */
+    .event-footer {
+      background: var(--white);
+      padding: 40px 32px;
+    }
+
+    .genre-container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .genre-tabs {
+      position: relative;
+      height: 50px;
+      border-bottom: 1px solid var(--gray-light);
+      display: flex;
+    }
+
+    .genre-tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 12px;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--gray-darker);
+      cursor: pointer;
+      border: none;
+      background: var(--white);
+      font-family: 'Hiragino Kaku Gothic ProN', -apple-system, sans-serif;
+      box-shadow: inset 0 -1px 0 0 var(--black-20);
+    }
+
+    .genre-tab-active {
+      font-weight: 600;
+      color: var(--crimson);
+      box-shadow: inset 0 -2px 0 0 var(--crimson);
+    }
+
+    .genre-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .genre-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .genre-category {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .genre-category-title-row {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .genre-icon {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .genre-icon img { width: 24px; height: 24px; display: block; }
+
+    .genre-category-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gray-darker);
+      line-height: 1.3;
+    }
+
+    .genre-item {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-darker);
+      line-height: 1.3;
+    }
+
+    .genre-more {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-darker);
+      cursor: pointer;
+    }
+
+    /* ===== COMMON FOOTER ===== */
+    .common-footer {
+      background: var(--gray-bg);
+      border-top: 1px solid var(--black-8);
+    }
+
+    .footer-initiative {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      padding: 40px 32px;
+    }
+
+    .footer-initiative-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      width: 220px;
+    }
+
+    .footer-initiative-icon { width: 24px; height: 24px; }
+
+    .footer-initiative-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gray-darker);
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .footer-initiative-desc {
+      font-size: 11px;
+      font-weight: 300;
+      color: var(--gray-mid);
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .footer-links-section {
+      background: var(--white);
+    }
+
+    .footer-links-inner {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      padding: 32px;
+      overflow: hidden;
+    }
+
+    .footer-link-column {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      overflow: hidden;
+    }
+
+    .footer-link {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-darker);
+      line-height: 1.3;
+      white-space: nowrap;
+    }
+
+    .footer-company-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      padding: 16px 32px;
+      flex-wrap: wrap;
+    }
+
+    .footer-company-link {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-mid);
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 24px 32px;
+      background: var(--gray-bg);
+    }
+
+    .footer-rakuten-logo { display: block; }
+
+    .footer-lang-btn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-mid);
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: 'Hiragino Kaku Gothic ProN', -apple-system, sans-serif;
+    }
+
+    .footer-copyright {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-mid);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-main">
+        <!-- Rakuten Logo -->
+        <a href="https://www.rakuten.co.jp/" class="header-logo">
+          <svg width="107" height="32" viewBox="0 0 107 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M86.0511 26.8178H21.3999L26.5565 32L86.0511 26.8178Z" fill="#BF0000"/>
+            <path d="M27.3947 5.82997V6.6073C26.17 5.82997 25.1386 5.37653 23.6561 5.37653C19.1441 5.37653 15.6633 9.52227 15.6633 14.6397C15.6633 19.7571 19.0796 23.9028 23.6561 23.9028C25.1386 23.9028 26.2344 23.4494 27.3947 22.6721V23.4494H31.391V5.82997H27.3947ZM23.5916 19.6923C21.3356 19.6923 19.7242 17.4899 19.7242 14.7045C19.7242 11.919 21.3356 9.71661 23.5916 9.71661C25.8477 9.71661 27.3947 11.919 27.3947 14.7045C27.4591 17.4899 25.8477 19.6923 23.5916 19.6923Z" fill="#BF0000"/>
+            <path d="M59.3013 5.82996V16.1943C59.3013 18.1376 57.9477 19.7571 56.014 19.7571C54.0802 19.7571 52.7266 18.1376 52.7266 16.1943V5.82996H48.7302V16.1943C48.7302 20.4696 51.6308 23.9028 55.885 23.9028C57.8188 23.9028 59.3013 22.8016 59.3013 22.8016V23.4494H63.2977V5.82996H59.3013Z" fill="#BF0000"/>
+            <path d="M96.429 23.5142V13.1498C96.429 11.2065 97.7826 9.58709 99.7164 9.58709C101.65 9.58709 103.004 11.2065 103.004 13.1498V23.5142H107V13.1498C107 8.87454 104.099 5.44134 99.8453 5.44134C97.9115 5.44134 96.429 6.54256 96.429 6.54256V5.83001H92.4326V23.4494H96.429V23.5142Z" fill="#BF0000"/>
+            <path d="M4.18976 23.5142V16.6478H7.09036L12.1825 23.4494H17.4036L11.2157 15.2227C13.1494 13.8623 14.3741 11.5951 14.3741 9.00403C14.3741 4.7935 10.9578 1.42508 6.83253 1.42508H0V23.4494H4.18976V23.5142ZM4.18976 5.63561H6.89699C8.76626 5.63561 10.3133 7.19027 10.3133 9.06881C10.3133 10.9474 8.76626 12.502 6.89699 12.502H4.18976V5.63561Z" fill="#BF0000"/>
+            <path d="M73.9975 19.3037C73.6108 19.5628 73.1596 19.7571 72.6439 19.7571C71.9993 19.7571 70.7746 19.2389 70.7746 17.6194V10.0405H74.1909V5.82997H70.7746V1.42511H66.7782V5.82997H64.6511V10.0405H66.7782V17.6194C66.7782 21.5709 69.7433 23.9028 72.7084 23.9028C73.8041 23.9028 75.3511 23.5142 76.5758 22.8016L73.9975 19.3037Z" fill="#BF0000"/>
+            <path d="M41.253 14.1215L48.0855 5.82996H42.5422L37.7078 11.9838V0H33.647V23.5142H37.7078V16.2591L43.6379 23.5142H49.1813L41.253 14.1215Z" fill="#BF0000"/>
+            <path d="M83.2152 5.37653C78.5742 5.37653 75.2869 9.4575 75.2869 14.6397C75.2869 20.081 79.4122 23.9028 83.6019 23.9028C85.729 23.9028 88.3718 23.1903 90.6278 19.9514L87.0827 17.8786C84.3754 21.8947 79.7989 19.8866 79.2833 15.8057H90.7567C91.7881 9.58705 87.7272 5.37653 83.2152 5.37653ZM86.6959 12.3725H79.5411C80.379 8.29151 85.9224 8.0324 86.6959 12.3725Z" fill="#BF0000"/>
+          </svg>
+        </a>
+
+        <!-- Search Bar -->
+        <div class="header-search">
+          <div class="search-input-area">
+            <span class="search-placeholder">キーワードから探す</span>
+          </div>
+          <button class="search-btn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.5551 17.7038L13.963 13.1386C15.1231 11.8546 15.7999 10.2378 15.7999 8.38315C15.7999 4.43614 12.5612 1.25 8.5491 1.25C4.48867 1.25 1.25 4.43614 1.25 8.38315C1.25 12.3302 4.48867 15.5163 8.50076 15.5163C10.1926 15.5163 11.7394 14.9457 12.9962 13.9946L17.6367 18.5598C17.7817 18.7024 17.9267 18.75 18.0718 18.75C18.2168 18.75 18.4101 18.7024 18.5068 18.5598C18.7968 18.3696 18.8452 17.9416 18.5551 17.7038ZM2.55514 8.38315C2.55514 5.14946 5.21375 2.53397 8.50076 2.53397C11.7878 2.53397 14.4947 5.14946 14.4947 8.43071C14.4947 11.6644 11.8361 14.3274 8.50076 14.3274C5.21375 14.2799 2.55514 11.6644 2.55514 8.38315Z" fill="white"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Icon Buttons + Member Info -->
+        <div class="header-actions">
+          <div class="header-icon-btns">
+            <!-- Cart -->
+            <a href="#" class="header-icon-btn">
+              <div class="icon-btn-icon">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.97852 18.4102C8.65277 18.4102 9.27147 19.0295 9.27148 19.7051C9.27148 20.437 8.70897 21 7.97852 21C7.2482 20.9999 6.68652 20.4369 6.68652 19.7051C6.68654 18.9733 7.24821 18.4103 7.97852 18.4102ZM14.7773 18.4102C15.4516 18.4102 16.0703 19.0295 16.0703 19.7051C16.0703 20.437 15.5078 21 14.7773 21C14.047 20.9998 13.4854 20.4369 13.4854 19.7051C13.4854 18.9733 14.047 18.4103 14.7773 18.4102ZM3.4834 0C3.82047 0 4.15759 0.225162 4.21387 0.619141L4.88867 3.82812H19.4971C19.7217 3.82812 20.0027 3.99722 20.1152 4.16602C20.2276 4.33492 20.2837 4.61694 20.2275 4.89844L17.5312 13.0615C17.4189 13.3429 17.1378 13.5682 16.8008 13.5684H6.86719C6.86771 13.5709 6.88665 13.6617 7.30469 15.6514H16.4629C16.8562 15.6514 17.1934 15.9897 17.1934 16.3838C17.1931 16.7777 16.8561 17.1152 16.4629 17.1152H6.68652C6.34943 17.1152 6.0123 16.8338 5.95605 16.4961L2.86523 1.46387H0.730469C0.337147 1.46387 0 1.12555 0 0.731445C0.000261145 0.33754 0.3373 0 0.730469 0H3.4834ZM6.53906 11.9922H16.2383L18.4297 5.34863H5.16895L6.53906 11.9922Z" fill="#333333"/>
+                </svg>
+                <span class="notification-badge">9</span>
+              </div>
+              <span class="icon-btn-label">買い物かご</span>
+            </a>
+            <!-- Notice -->
+            <a href="#" class="header-icon-btn">
+              <div class="icon-btn-icon">
+                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6924 0C18.9231 1.2381e-05 19.0965 0.0576436 19.2695 0.230469C19.4425 0.403261 19.5 0.576251 19.5 0.806641V15.7861C19.5 16.0165 19.4424 16.1895 19.2695 16.3623C19.0965 16.5351 18.9231 16.5928 18.6924 16.5928H8.82715L4.32715 21.1445C4.15407 21.3174 3.98077 21.375 3.75 21.375C3.63487 21.3175 3.51973 21.26 3.46191 21.2598C3.17345 21.1445 3 20.8564 3 20.5107V16.5352H0.807617C0.576886 16.5351 0.403527 16.4775 0.230469 16.3047C0.0575991 16.1319 0 15.9589 0 15.7285V0.749023C0 0.518634 0.0575119 0.345644 0.230469 0.172852C0.403527 0.0576349 0.576886 1.24988e-05 0.807617 0H18.6924ZM1.61523 14.9795H3.80762C4.03836 14.9795 4.21171 15.0372 4.38477 15.21C4.55778 15.3827 4.61519 15.5558 4.61523 15.7861V18.6094L8.01953 15.21C8.1924 15.0375 8.36529 14.9796 8.5957 14.9795H17.8848V1.61328H1.61523V14.9795ZM9.75 10.7734C10.4422 10.7734 11.0193 11.3498 11.0195 12.041C11.0195 12.7324 10.4423 13.3086 9.75 13.3086C9.05769 13.3086 8.48047 12.7324 8.48047 12.041C8.48071 11.3498 9.05783 10.7734 9.75 10.7734ZM9.75 3.28418C10.2115 3.28418 10.5576 3.6299 10.5576 4.09082V8.98828C10.5574 9.44899 10.2114 9.79492 9.75 9.79492C9.34628 9.79491 8.94263 9.44899 8.94238 8.98828V4.09082C8.94238 3.62991 9.28847 3.28419 9.75 3.28418Z" fill="#333333"/>
+                </svg>
+                <span class="notification-badge">99</span>
+              </div>
+              <span class="icon-btn-label">お知らせ</span>
+            </a>
+            <!-- Browse History -->
+            <a href="#" class="header-icon-btn">
+              <div class="icon-btn-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.5 11.775C22.3311 6.88125 18.3347 3 13.4939 3C13.4376 3 13.3251 3 13.2688 3C8.65314 3.1125 4.93813 6.7125 4.54412 11.2125L2.85547 8.68125C2.63032 8.2875 2.18002 8.23125 1.84229 8.45625C1.50456 8.68125 1.39199 9.13125 1.61714 9.46875L4.20639 13.4062C4.37525 13.6313 4.6004 13.7438 4.82556 13.7438C4.99442 13.7438 5.107 13.6875 5.21957 13.6312L9.15974 11.0438C9.49746 10.8188 9.61004 10.3688 9.38489 10.0312C9.15973 9.69375 8.70943 9.58125 8.3717 9.80625L6.06389 11.325C6.40162 7.55625 9.49746 4.575 13.3251 4.51875C13.3813 4.51875 13.4376 4.51875 13.4939 4.51875C17.5467 4.51875 20.8676 7.725 20.9802 11.8312C20.9802 11.8875 20.9802 11.9438 20.9802 12C20.9802 16.05 17.7718 19.3687 13.6628 19.4812C13.6065 19.4812 13.5502 19.4812 13.4939 19.4812C10.8484 19.4812 8.48428 18.075 7.13337 15.9938C6.90821 15.6563 6.45791 15.5438 6.12018 15.7688C5.78245 15.9938 5.66988 16.4438 5.89503 16.7812C7.47109 19.3125 10.2855 21 13.4939 21C13.5502 21 13.6628 21 13.7191 21C18.6161 20.8875 22.5 16.8938 22.5 12.0563C22.5 11.8875 22.5 11.8313 22.5 11.775Z" fill="#333333"/>
+                </svg>
+              </div>
+              <span class="icon-btn-label">閲覧履歴</span>
+            </a>
+            <!-- Bookmark -->
+            <a href="#" class="header-icon-btn">
+              <div class="icon-btn-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.5636 21.4292L11.9881 17.3295L6.35572 21.4292C6.07125 21.6 5.7299 21.6 5.50233 21.4292C5.21786 21.2584 5.10408 20.9167 5.21786 20.5751L7.37979 14.0269L1.80429 9.9272C1.51983 9.75637 1.46293 9.41473 1.51983 9.07309C1.63361 8.78838 1.91808 8.56062 2.20254 8.56062H9.14347L11.3054 1.95552C11.3623 1.72776 11.6468 1.5 11.9881 1.5C12.3295 1.5 12.6139 1.72776 12.6708 2.01246L14.8328 8.61756H21.7737C22.115 8.61756 22.3995 8.84533 22.4564 9.13003C22.5702 9.41473 22.4564 9.75637 22.1719 9.98414L16.5964 14.0269L18.7584 20.632C18.8721 20.9167 18.7584 21.2584 18.4739 21.4861C18.3601 21.6 18.1894 21.6 18.0188 21.6C17.8481 21.6 17.7343 21.5431 17.5636 21.4292Z" fill="#333333"/>
+                </svg>
+              </div>
+              <span class="icon-btn-label">お気に入り</span>
+            </a>
+            <!-- Purchase History -->
+            <a href="#" class="header-icon-btn">
+              <div class="icon-btn-icon">
+                <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.9482 0C14.1767 2.38379e-05 14.3482 0.113648 14.5195 0.28418L18.5781 4.83691C18.6925 4.95074 18.75 5.17888 18.75 5.34961V20.2598C18.75 20.4874 18.6929 20.6586 18.5215 20.7725C18.4072 20.8863 18.1783 21 18.0068 21H0.743164V20.9434C0.514591 20.9434 0.342845 20.8864 0.228516 20.7158C0.114186 20.602 0 20.3739 0 20.2031V0.740234C0 0.512615 0.0570618 0.34136 0.228516 0.227539C0.342845 0.113718 0.57167 0 0.743164 0H13.9482ZM1.48633 19.4639H17.207V5.57715L13.6055 1.47949H1.48633V19.4639ZM5.31641 14.3418C5.71643 14.3419 6.05943 14.6828 6.05957 15.0811C6.05957 15.4794 5.71651 15.8212 5.31641 15.8213H4.34473C3.94457 15.8213 3.60156 15.4794 3.60156 15.0811C3.6017 14.6828 3.94466 14.3418 4.34473 14.3418H5.31641ZM13.9482 14.3418C14.3483 14.3418 14.6913 14.6828 14.6914 15.0811C14.6914 15.4794 14.3484 15.8212 13.9482 15.8213H8.51758C8.11743 15.8213 7.77441 15.4794 7.77441 15.0811C7.77455 14.6828 8.11751 14.3418 8.51758 14.3418H13.9482Z" fill="#333333"/>
+                </svg>
+              </div>
+              <span class="icon-btn-label">購入履歴</span>
+            </a>
+            <!-- Coupon -->
+            <a href="#" class="header-icon-btn">
+              <div class="icon-btn-icon">
+                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.5 0C19.8978 0 20.2792 0.158149 20.5605 0.439453C20.8419 0.720758 21 1.10218 21 1.5V7.5C20.6022 7.5 20.2208 7.65815 19.9395 7.93945C19.6581 8.22076 19.5 8.60218 19.5 9C19.5 9.39782 19.6581 9.77924 19.9395 10.0605C20.2208 10.3419 20.6022 10.5 21 10.5V16.5C21 16.8978 20.8419 17.2792 20.5605 17.5605C20.2792 17.8419 19.8978 18 19.5 18H1.5C1.10218 18 0.720758 17.8419 0.439453 17.5605C0.158149 17.2792 0 16.8978 0 16.5V10.5C0.397825 10.5 0.779242 10.3419 1.06055 10.0605C1.34185 9.77924 1.5 9.39782 1.5 9C1.5 8.60218 1.34185 8.22076 1.06055 7.93945C0.779242 7.65815 0.397825 7.5 0 7.5V1.5C0 1.10218 0.158149 0.720758 0.439453 0.439453C0.720758 0.158149 1.10218 0 1.5 0H19.5ZM1.5 6.40234C1.95589 6.66541 2.33436 7.04425 2.59766 7.5C2.86096 7.95594 3 8.47349 3 9C3 9.52651 2.86096 10.0441 2.59766 10.5C2.33436 10.9558 1.95589 11.3346 1.5 11.5977V16.5H19.5V11.5977C19.0441 11.3346 18.6656 10.9558 18.4023 10.5C18.139 10.0441 18 9.52651 18 9C18 8.47349 18.139 7.95594 18.4023 7.5C18.6656 7.04425 19.0441 6.66541 19.5 6.40234V1.5H1.5V6.40234ZM7.5 12V15H6V12H7.5ZM7.5 10.5H6V7.5H7.5V10.5ZM7.5 6H6V3H7.5V6Z" fill="#333333"/>
+                </svg>
+              </div>
+              <span class="icon-btn-label">クーポン</span>
+            </a>
+          </div>
+
+          <!-- Member Info -->
+          <div class="member-info">
+            <div class="member-points-area">
+              <div class="member-name-row">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_rank)">
+                    <path d="M6.99987 0.408333C3.32487 0.408333 0.408203 3.325 0.408203 7C0.408203 7.81667 0.583203 8.575 0.816536 9.275L9.27487 0.816666C8.57487 0.524999 7.81654 0.408333 6.99987 0.408333Z" fill="#99B7DD"/>
+                    <path d="M9.27474 0.816666L0.816406 9.275C1.74974 11.8417 4.14141 13.5917 6.99974 13.5917C10.6747 13.5917 13.5914 10.6167 13.5914 7C13.5914 4.14167 11.8414 1.75 9.27474 0.816666Z" fill="#004BAA"/>
+                  </g>
+                  <defs><clipPath id="clip0_rank"><rect width="14" height="14" fill="white"/></clipPath></defs>
+                </svg>
+                <span class="member-name">楽天 市太郎さん</span>
+              </div>
+              <div class="member-points-row">
+                <span class="points-number">9,999</span>
+                <span class="points-label">ポイント</span>
+              </div>
+            </div>
+            <div class="member-rate-area">
+              <span class="member-rate-label">あなたはポイント</span>
+              <div class="member-rate-row">
+                <div class="rate-panel">
+                  <span class="rate-number">8</span>
+                </div>
+                <span class="rate-unit">倍</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-border"></div>
+  </header>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <nav class="page-breadcrumb" aria-label="Breadcrumb">
+    <a href="#" class="breadcrumb-link">○○○○キャンペーン</a>
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.90525 1.125L3.375 1.65525L7.71975 6L3.375 10.3448L3.90525 10.875L8.78025 6L3.90525 1.125Z" fill="#8F8F8F"/>
+    </svg>
+    <a href="#" class="breadcrumb-link-muted">ページ 2</a>
+  </nav>
+
+  <!-- ===== KANBAN BANNER ===== -->
+  <div class="page-kanban">
+    <div class="kanban-image"></div>
+    <div class="kanban-text-wrapper">
+      <div class="kanban-text-inner">
+        <p class="kanban-lead-text">企画リード文企画リード文企画リード文企画リード文企画リード文企画リード文企画リード文企画リード文 企画リード文企画リード文企画リード文企画リード文企画リード文企画リード文企画リード文企画リード文</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="page-contents">
+
+    <!-- 2-COLUMN SECTION -->
+    <div class="content-container">
+      <div class="section-header">
+        <h2 class="section-title">タイトルテキスト</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="product-grid-2col">
+
+        <!-- Card 1 -->
+        <div class="product-card-2col">
+          <a href="https://item.rakuten.co.jp/watermode/10010279/" class="product-card-img-2col">
+            <img src="https://tshop.r10s.jp/watermode/cabinet/01304872/coolshouldermd-1-mm.jpg" alt="コールマン ショルダーバッグ" />
+          </a>
+          <div class="product-card-body">
+            <p class="product-catch">キャッチ５６７８９０キャッチ５６７８</p>
+            <p class="product-name">商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name</p>
+            <div class="product-price-row">
+              <span class="product-price-2col"><span class="price-num">999,980</span><span class="price-yen">円</span></span>
+              <span class="product-free-shipping">送料無料</span>
+            </div>
+            <div class="product-shop-row">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6802 11.8331H12.0817V8.27486H12.6802C12.8132 8.27486 12.913 8.20835 13.0128 8.14184C13.1125 8.04208 13.1458 7.90906 13.1125 7.8093L12.5805 1.62403C12.5472 1.39125 12.3477 1.22498 12.1149 1.22498H1.90588C1.6731 1.22498 1.47357 1.39125 1.44032 1.62403L0.875 7.8093C0.875 7.94232 0.908254 8.04208 0.974762 8.14184C1.07452 8.2416 1.17429 8.27486 1.3073 8.27486H1.90588V11.8331H1.34056C1.10778 11.8331 0.908254 12.0326 0.908254 12.2654C0.908254 12.4981 1.10778 12.6977 1.34056 12.6977H12.6802C12.913 12.6977 13.1125 12.4981 13.1125 12.2654C13.1458 12.0326 12.9463 11.8331 12.6802 11.8331ZM1.80612 7.377L2.30493 2.12284H11.7159L12.2147 7.41025H12.0817V7.377H1.93913V7.41025H1.80612V7.377ZM11.217 8.27486V11.7998H7.82512V9.97082C7.82512 9.63828 7.52583 9.33899 7.19329 9.33899H6.894C6.56146 9.33899 6.26217 9.63828 6.26217 9.97082V11.7998H2.80374V8.27486H11.217Z" fill="#717171"/>
+              </svg>
+              <span class="product-shop-name">ショップ名Shop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card-2col">
+          <a href="https://item.rakuten.co.jp/perenne/20197/" class="product-card-img-2col">
+            <img src="https://tshop.r10s.jp/perenne/cabinet/20197-1gr.jpg" alt="PERENNE セレモニーバッグ" />
+          </a>
+          <div class="product-card-body">
+            <p class="product-catch">キャッチ５６７８９０キャッチ５６７８</p>
+            <p class="product-name">商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name</p>
+            <div class="product-price-row">
+              <span class="product-price-2col"><span class="price-num">999,980</span><span class="price-yen">円</span></span>
+              <span class="product-free-shipping">送料無料</span>
+            </div>
+            <div class="product-shop-row">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6802 11.8331H12.0817V8.27486H12.6802C12.8132 8.27486 12.913 8.20835 13.0128 8.14184C13.1125 8.04208 13.1458 7.90906 13.1125 7.8093L12.5805 1.62403C12.5472 1.39125 12.3477 1.22498 12.1149 1.22498H1.90588C1.6731 1.22498 1.47357 1.39125 1.44032 1.62403L0.875 7.8093C0.875 7.94232 0.908254 8.04208 0.974762 8.14184C1.07452 8.2416 1.17429 8.27486 1.3073 8.27486H1.90588V11.8331H1.34056C1.10778 11.8331 0.908254 12.0326 0.908254 12.2654C0.908254 12.4981 1.10778 12.6977 1.34056 12.6977H12.6802C12.913 12.6977 13.1125 12.4981 13.1125 12.2654C13.1458 12.0326 12.9463 11.8331 12.6802 11.8331ZM1.80612 7.377L2.30493 2.12284H11.7159L12.2147 7.41025H12.0817V7.377H1.93913V7.41025H1.80612V7.377ZM11.217 8.27486V11.7998H7.82512V9.97082C7.82512 9.63828 7.52583 9.33899 7.19329 9.33899H6.894C6.56146 9.33899 6.26217 9.63828 6.26217 9.97082V11.7998H2.80374V8.27486H11.217Z" fill="#717171"/>
+              </svg>
+              <span class="product-shop-name">ショップ名Shop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card-2col">
+          <a href="https://item.rakuten.co.jp/hayni/barmed/" class="product-card-img-2col">
+            <img src="https://tshop.r10s.jp/hayni/cabinet/bag5/barmed-25aw1.jpg" alt="HAYNI チェーンバッグ" />
+          </a>
+          <div class="product-card-body">
+            <p class="product-catch">キャッチ５６７８９０キャッチ５６７８</p>
+            <p class="product-name">商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name</p>
+            <div class="product-price-row">
+              <span class="product-price-2col"><span class="price-num">999,980</span><span class="price-yen">円</span></span>
+              <span class="product-free-shipping">送料無料</span>
+            </div>
+            <div class="product-shop-row">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6802 11.8331H12.0817V8.27486H12.6802C12.8132 8.27486 12.913 8.20835 13.0128 8.14184C13.1125 8.04208 13.1458 7.90906 13.1125 7.8093L12.5805 1.62403C12.5472 1.39125 12.3477 1.22498 12.1149 1.22498H1.90588C1.6731 1.22498 1.47357 1.39125 1.44032 1.62403L0.875 7.8093C0.875 7.94232 0.908254 8.04208 0.974762 8.14184C1.07452 8.2416 1.17429 8.27486 1.3073 8.27486H1.90588V11.8331H1.34056C1.10778 11.8331 0.908254 12.0326 0.908254 12.2654C0.908254 12.4981 1.10778 12.6977 1.34056 12.6977H12.6802C12.913 12.6977 13.1125 12.4981 13.1125 12.2654C13.1458 12.0326 12.9463 11.8331 12.6802 11.8331ZM1.80612 7.377L2.30493 2.12284H11.7159L12.2147 7.41025H12.0817V7.377H1.93913V7.41025H1.80612V7.377ZM11.217 8.27486V11.7998H7.82512V9.97082C7.82512 9.63828 7.52583 9.33899 7.19329 9.33899H6.894C6.56146 9.33899 6.26217 9.63828 6.26217 9.97082V11.7998H2.80374V8.27486H11.217Z" fill="#717171"/>
+              </svg>
+              <span class="product-shop-name">ショップ名Shop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card-2col">
+          <a href="https://item.rakuten.co.jp/alice0908/cbs1011/" class="product-card-img-2col">
+            <img src="https://tshop.r10s.jp/alice0908/cabinet/colman/coleman2/2025csmd-top.jpg" alt="コールマン ショルダーバッグ" />
+          </a>
+          <div class="product-card-body">
+            <p class="product-catch">キャッチ５６７８９０キャッチ５６７８</p>
+            <p class="product-name">商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name 商品名 Item name</p>
+            <div class="product-price-row">
+              <span class="product-price-2col"><span class="price-num">999,980</span><span class="price-yen">円</span></span>
+              <span class="product-free-shipping">送料無料</span>
+            </div>
+            <div class="product-shop-row">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6802 11.8331H12.0817V8.27486H12.6802C12.8132 8.27486 12.913 8.20835 13.0128 8.14184C13.1125 8.04208 13.1458 7.90906 13.1125 7.8093L12.5805 1.62403C12.5472 1.39125 12.3477 1.22498 12.1149 1.22498H1.90588C1.6731 1.22498 1.47357 1.39125 1.44032 1.62403L0.875 7.8093C0.875 7.94232 0.908254 8.04208 0.974762 8.14184C1.07452 8.2416 1.17429 8.27486 1.3073 8.27486H1.90588V11.8331H1.34056C1.10778 11.8331 0.908254 12.0326 0.908254 12.2654C0.908254 12.4981 1.10778 12.6977 1.34056 12.6977H12.6802C12.913 12.6977 13.1125 12.4981 13.1125 12.2654C13.1458 12.0326 12.9463 11.8331 12.6802 11.8331ZM1.80612 7.377L2.30493 2.12284H11.7159L12.2147 7.41025H12.0817V7.377H1.93913V7.41025H1.80612V7.377ZM11.217 8.27486V11.7998H7.82512V9.97082C7.82512 9.63828 7.52583 9.33899 7.19329 9.33899H6.894C6.56146 9.33899 6.26217 9.63828 6.26217 9.97082V11.7998H2.80374V8.27486H11.217Z" fill="#717171"/>
+              </svg>
+              <span class="product-shop-name">ショップ名Shop</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 3-COLUMN SECTION (Alcor) -->
+    <div class="content-container">
+      <div class="section-header">
+        <h2 class="section-title">タイトルテキスト</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="product-grid-3col">
+
+        <div class="product-card-3col">
+          <a href="https://item.rakuten.co.jp/watermode/10010279/" class="product-card-img-3col">
+            <img src="https://tshop.r10s.jp/watermode/cabinet/01304872/coolshouldermd-1-mm.jpg" alt="" />
+          </a>
+          <div class="product-card-body-3col">
+            <p class="product-name-3col">コールマン ショルダーバッグ Coleman WALKER クールショルダーMD 斜め掛けバッグ 8L A4</p>
+            <p class="product-price-3col">6,490円</p>
+          </div>
+        </div>
+
+        <div class="product-card-3col">
+          <a href="https://item.rakuten.co.jp/perenne/20197/" class="product-card-img-3col">
+            <img src="https://tshop.r10s.jp/perenne/cabinet/20197-1gr.jpg" alt="" />
+          </a>
+          <div class="product-card-body-3col">
+            <p class="product-name-3col">半額【お買い得商品 5,390円OFF】入学式バッグ 卒業式バッグ セレモニーバッグ PERENNE ペレンネ</p>
+            <p class="product-price-3col">5,390円</p>
+          </div>
+        </div>
+
+        <div class="product-card-3col">
+          <a href="https://item.rakuten.co.jp/hayni/barmed/" class="product-card-img-3col">
+            <img src="https://tshop.r10s.jp/hayni/cabinet/bag5/barmed-25aw1.jpg" alt="" />
+          </a>
+          <div class="product-card-body-3col">
+            <p class="product-name-3col">本革 チェーンバッグ ショルダーバッグ レディース barmed バルメド｜HAYNI ヘイニ 牛革 キルティング</p>
+            <p class="product-price-3col">20,000円</p>
+          </div>
+        </div>
+
+        <div class="product-card-3col">
+          <a href="https://item.rakuten.co.jp/alice0908/cbs1011/" class="product-card-img-3col">
+            <img src="https://tshop.r10s.jp/alice0908/cabinet/colman/coleman2/2025csmd-top.jpg" alt="" />
+          </a>
+          <div class="product-card-body-3col">
+            <p class="product-name-3col">【公認販売店】コールマン ショルダーバッグ 8L coleman クールショルダーMD CBS6011 メンズ レディース</p>
+            <p class="product-price-3col">6,490円</p>
+          </div>
+        </div>
+
+        <div class="product-card-3col">
+          <a href="https://item.rakuten.co.jp/perenne/20150/" class="product-card-img-3col">
+            <img src="https://tshop.r10s.jp/perenne/cabinet/20150-1z.jpg" alt="" />
+          </a>
+          <div class="product-card-body-3col">
+            <p class="product-name-3col">半額【お買い得商品 4,840円OFF】軽い トートバッグ PERENNE ペレンネ ビジネスバッグ レディース</p>
+            <p class="product-price-3col">4,840円</p>
+          </div>
+        </div>
+
+        <div class="product-card-3col">
+          <a href="https://item.rakuten.co.jp/t-two-o/zzei-28/" class="product-card-img-3col">
+            <img src="https://tshop.r10s.jp/t-two-o/cabinet/brands/moz/zzei-28-bx_251127rr.jpg" alt="" />
+          </a>
+          <div class="product-card-body-3col">
+            <p class="product-name-3col">【WEB限定】ショルダーバッグ レディース moz モズ 多機能 コンパクト 通勤 北欧 ギフト ZZEI-28</p>
+            <p class="product-price-3col">8,250円</p>
+          </div>
+        </div>
+
+        <div class="product-card-3col">
+          <a href="https://item.rakuten.co.jp/llbean/rtc112636/" class="product-card-img-3col">
+            <img src="https://tshop.r10s.jp/llbean/cabinet/08081320/08081321/08081322/boat_fv.jpg" alt="" />
+          </a>
+          <div class="product-card-body-3col">
+            <p class="product-name-3col">【刺繍可】【公式】エルエルビーン ボート アンド トート バッグ オープン トップ ミディアム L.L.Bean</p>
+            <p class="product-price-3col">11,000円</p>
+          </div>
+        </div>
+
+        <div class="product-card-3col">
+          <a href="https://item.rakuten.co.jp/pinktrick/sf00124p/" class="product-card-img-3col">
+            <img src="https://tshop.r10s.jp/pinktrick/cabinet/bag/bigtote/251107/sf00124p_thum.jpg" alt="" />
+          </a>
+          <div class="product-card-body-3col">
+            <p class="product-name-3col">バッグ トート ラップリボンビッグトート ピンクトリック マザーズバッグ 大容量 はっ水 軽量</p>
+            <p class="product-price-3col">5,940円</p>
+          </div>
+        </div>
+
+        <div class="product-card-3col">
+          <a href="https://item.rakuten.co.jp/watermode/10010279/" class="product-card-img-3col">
+            <img src="https://tshop.r10s.jp/watermode/cabinet/01304872/coolshouldermd-1-mm.jpg" alt="" />
+          </a>
+          <div class="product-card-body-3col">
+            <p class="product-name-3col">コールマン ショルダーバッグ Coleman WALKER クールショルダーMD 男女兼用 通学 通勤</p>
+            <p class="product-price-3col">6,490円</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /page-contents -->
+
+  <!-- ===== EVENT FOOTER / GENRE ===== -->
+  <div class="event-footer">
+    <div class="genre-container">
+      <div class="genre-tabs">
+        <button class="genre-tab">特集・サービス</button>
+        <button class="genre-tab genre-tab-active">ジャンル</button>
+      </div>
+      <div class="genre-list">
+        <!-- Row 1 -->
+        <div class="genre-row">
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <img src="https://api.builder.io/api/v1/image/assets/TEMP/7f7984028781f865626f972014ce3883edbb734e?width=48" alt="" />
+              </div>
+              <span class="genre-category-title">ファッション</span>
+            </div>
+            <span class="genre-item">レディースファッション</span>
+            <span class="genre-item">メンズファッション</span>
+            <span class="genre-item">キッズ・ベビー・マタニティ</span>
+            <span class="genre-item">バッグ・小物・ブランド雑貨</span>
+            <span class="genre-item">靴</span>
+            <span class="genre-more">さらに見る
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.6875 4.375L12.0689 3.75638L7 8.82525L1.93113 3.75638L1.3125 4.375L7 10.0625L12.6875 4.375Z" fill="#333333"/></svg>
+            </span>
+          </div>
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <img src="https://api.builder.io/api/v1/image/assets/TEMP/008ca5c21ebbbab603fb95ec8bce5cb0c1926a00?width=48" alt="" />
+              </div>
+              <span class="genre-category-title">グルメ・飲料</span>
+            </div>
+            <span class="genre-item">食品</span>
+            <span class="genre-item">スイーツ・お菓子</span>
+            <span class="genre-item">水・ソフトドリンク</span>
+            <span class="genre-item">ビール・洋酒</span>
+            <span class="genre-item">日本酒・焼酎</span>
+            <span class="genre-more">さらに表示
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.6875 4.375L12.0689 3.75638L7 8.82525L1.93113 3.75638L1.3125 4.375L7 10.0625L12.6875 4.375Z" fill="#333333"/></svg>
+            </span>
+          </div>
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <img src="https://api.builder.io/api/v1/image/assets/TEMP/80c1f2931629c313242e913cecf52acd2dbba565?width=48" alt="" />
+              </div>
+              <span class="genre-category-title">日用品・ヘルスケア</span>
+            </div>
+            <span class="genre-item">日用雑貨・文房具・手芸</span>
+            <span class="genre-item">医薬品・コンタクト・介護</span>
+            <span class="genre-item">ダイエット・健康</span>
+          </div>
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <img src="https://api.builder.io/api/v1/image/assets/TEMP/f94e3c1911ab325a64d79973506b71b0423e0faa?width=48" alt="" />
+              </div>
+              <span class="genre-category-title">コスメ・ヘアケア</span>
+            </div>
+            <span class="genre-item">美容・コスメ・香水</span>
+          </div>
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <img src="https://api.builder.io/api/v1/image/assets/TEMP/37bd8ee3cdc738fa871378359075fb5838834ae9?width=48" alt="" />
+              </div>
+              <span class="genre-category-title">ベビー・キッズ</span>
+            </div>
+            <span class="genre-item">キッズ・ベビー・マタニティ</span>
+            <span class="genre-item">おもちゃ</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="genre-row">
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" fill="none"/><path d="M21 6H3a1 1 0 00-1 1v10a1 1 0 001 1h18a1 1 0 001-1V7a1 1 0 00-1-1zm-1 10H4V8h16v8zM8 10h8v1H8zm0 3h5v1H8z" fill="#717171"/></svg>
+              </div>
+              <span class="genre-category-title">家電</span>
+            </div>
+            <span class="genre-item">パソコン・周辺機器</span>
+            <span class="genre-item">TV・オーディオ・カメラ</span>
+            <span class="genre-item">タブレット PC・スマートフォン</span>
+          </div>
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7z" fill="#717171"/></svg>
+              </div>
+              <span class="genre-category-title">スポーツ・アウトドア</span>
+            </div>
+            <span class="genre-item">スポーツ・フィットネス</span>
+            <span class="genre-item">スキー・スノーボード</span>
+            <span class="genre-item">ゴルフ用品</span>
+          </div>
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" fill="#717171"/></svg>
+              </div>
+              <span class="genre-category-title">鞄・オートバッグ</span>
+            </div>
+            <span class="genre-item">自動車</span>
+            <span class="genre-item">バイク</span>
+          </div>
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z" fill="#717171"/></svg>
+              </div>
+              <span class="genre-category-title">インテリア・DIY・ペット</span>
+            </div>
+            <span class="genre-item">インテリア・寝具</span>
+            <span class="genre-item">キッチン・用品・食器・調理器具</span>
+            <span class="genre-item">ペットグッズ・用品</span>
+            <span class="genre-item">花・観葉植物</span>
+            <span class="genre-more">さらに見る
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.6875 4.375L12.0689 3.75638L7 8.82525L1.93113 3.75638L1.3125 4.375L7 10.0625L12.6875 4.375Z" fill="#333333"/></svg>
+            </span>
+          </div>
+          <div class="genre-category">
+            <div class="genre-category-title-row">
+              <div class="genre-icon">
+                <img src="https://api.builder.io/api/v1/image/assets/TEMP/b1f9f6e954f4a48789a908deb5189b5bf6cab795?width=48" alt="" />
+              </div>
+              <span class="genre-category-title">エンタメ・ホビー</span>
+            </div>
+            <span class="genre-item">ゲーム</span>
+            <span class="genre-item">ホビー</span>
+            <span class="genre-item">CD・DVD</span>
+            <span class="genre-item">楽器・音楽機材</span>
+            <span class="genre-item">本・雑誌・コミック</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== COMMON FOOTER ===== -->
+  <footer class="common-footer">
+    <div class="footer-initiative">
+      <div class="footer-initiative-item">
+        <img class="footer-initiative-icon" src="https://r.r10s.jp/com/img/thumb/footer/icon_security_red.svg" alt="" />
+        <div>
+          <p class="footer-initiative-title">情報セキュリティの取り組み</p>
+          <p class="footer-initiative-desc">SSLに対応している楽天市場では、クレジットカード番号は暗号化して送信されます。</p>
+        </div>
+      </div>
+      <div class="footer-initiative-item">
+        <img class="footer-initiative-icon" src="https://r.r10s.jp/com/img/thumb/footer/icon_safety_red.svg" alt="" />
+        <div>
+          <p class="footer-initiative-title">安心してお買い物いただくために</p>
+          <p class="footer-initiative-desc">楽天独自のガイドラインを設け、違反がないかを日々パトロールしています。</p>
+        </div>
+      </div>
+      <div class="footer-initiative-item">
+        <img class="footer-initiative-icon" src="https://r.r10s.jp/com/img/thumb/footer/icon_sustainability_red.svg" alt="" />
+        <div>
+          <p class="footer-initiative-title">楽天のサステナビリティ</p>
+          <p class="footer-initiative-desc">楽天は、すべての人々にとって持続的な未来を目指します。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-links-section">
+      <div class="footer-links-inner">
+        <div class="footer-link-column">
+          <a href="https://my.rakuten.co.jp/" class="footer-link">会員情報</a>
+          <a href="https://basket.step.rakuten.co.jp/" class="footer-link">買い物かご</a>
+          <a href="https://ashiato.rakuten.co.jp/" class="footer-link">閲覧履歴</a>
+          <a href="https://order.my.rakuten.co.jp/" class="footer-link">購入履歴</a>
+        </div>
+        <div class="footer-link-column">
+          <a href="https://my.bookmark.rakuten.co.jp/" class="footer-link">お気に入り</a>
+          <a href="https://coupon.rakuten.co.jp/" class="footer-link">myクーポン</a>
+          <a href="https://ranking.rakuten.co.jp/" class="footer-link">ランキング</a>
+          <a href="https://event.rakuten.co.jp/superdeal/" class="footer-link">スーパーDEAL</a>
+        </div>
+        <div class="footer-link-column">
+          <a href="https://www.rakuten.co.jp/" class="footer-link">楽天市場トップ</a>
+          <a href="https://www.rakuten.co.jp/category/" class="footer-link">ジャンル一覧</a>
+          <a href="https://event.rakuten.co.jp/" class="footer-link">特集一覧</a>
+          <a href="https://event.rakuten.co.jp/app/" class="footer-link">楽天市場アプリ</a>
+        </div>
+        <div class="footer-link-column">
+          <a href="https://www.rakuten.co.jp/sitemap/" class="footer-link">楽天のサービス一覧</a>
+          <a href="https://www.rakuten.co.jp/ec/" class="footer-link">出店のご案内</a>
+          <a href="https://event.rakuten.co.jp/beginner/" class="footer-link">ご利用ガイド</a>
+          <a href="https://ichiba.faq.rakuten.net/" class="footer-link">ヘルプ・問い合わせ</a>
+        </div>
+      </div>
+      <div class="footer-company-links">
+        <a href="#" class="footer-company-link">企業情報</a>
+        <a href="#" class="footer-company-link">個人情報保護方針</a>
+        <a href="#" class="footer-company-link">投資家情報</a>
+        <a href="#" class="footer-company-link">サステナビリティ</a>
+        <a href="#" class="footer-company-link">プレスリリース</a>
+        <a href="#" class="footer-company-link">採用情報</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="https://www.rakuten.co.jp/" class="footer-rakuten-logo">
+        <svg width="104" height="32" viewBox="0 0 104 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_footer)">
+            <path d="M83.6575 26.4346H20.7876L25.7996 31.4479L83.6575 26.4346Z" fill="#BF0000"/>
+            <path d="M26.6139 6.1428V6.90202C25.4486 6.15535 24.4024 5.72241 22.9677 5.72241C18.5633 5.72241 15.2178 9.74437 15.2178 14.6824C15.2178 19.6267 18.5633 23.6424 22.9677 23.6424C24.4024 23.6424 25.4486 23.2095 26.6139 22.4628V23.222H30.4857V6.1428H26.6139ZM22.9614 19.5389C20.7874 19.5389 19.2024 17.3993 19.2024 14.6887C19.2024 11.9844 20.7937 9.84477 22.9614 9.84477C25.1354 9.84477 26.6703 11.9844 26.6703 14.6887C26.6703 17.393 25.1416 19.5389 22.9614 19.5389Z" fill="#BF0000"/>
+            <path d="M57.6261 6.14282V16.182C57.6261 18.0644 56.3355 19.6518 54.456 19.6518C52.5765 19.6518 51.2859 18.0644 51.2859 16.182V6.14282H47.4141V16.182C47.4141 20.2981 50.2271 23.6487 54.337 23.6487C56.2415 23.6487 57.6261 22.5946 57.6261 22.5946V23.2283H61.4979V6.14282H57.6261Z" fill="#BF0000"/>
+            <path d="M93.7068 23.2283V13.1891C93.7068 11.3067 94.9974 9.71927 96.8769 9.71927C98.7564 9.71927 100.047 11.3067 100.047 13.1891V23.2283H103.919V13.1891C103.919 9.073 101.106 5.72241 96.9959 5.72241C95.0913 5.72241 93.7068 6.77653 93.7068 6.77653V6.1428H89.835V23.2283H93.7068Z" fill="#BF0000"/>
+            <path d="M4.05358 23.2282V16.6086H6.91671L11.8724 23.2282H16.9408L10.9514 15.2408C12.8184 13.898 14.0463 11.7145 14.0463 9.24232C14.0463 5.18272 10.7509 1.88232 6.69743 1.88232H0.00634766V23.2282H4.05358ZM4.05358 5.94193H6.69743C8.5143 5.94193 10.0054 7.42272 10.0054 9.2486C10.0054 11.0808 8.52057 12.5615 6.69743 12.5615H4.05358V5.94193Z" fill="#BF0000"/>
+            <path d="M71.9355 19.1875C71.5846 19.4259 71.1461 19.6079 70.6386 19.6079C70.0059 19.6079 68.8155 19.1248 68.8155 17.5122V10.2024H72.1297V6.14906H68.8155V1.88867H64.9437V6.14906H62.895V10.2024H64.9437V17.5687C64.9437 21.3836 67.8131 23.6612 70.7013 23.6612C71.7789 23.6612 73.2699 23.3098 74.4916 22.5883L71.9355 19.1875Z" fill="#BF0000"/>
+            <path d="M40.1087 14.1552L46.7497 6.14269H41.3242L36.6818 12.0972V0.476807H32.6909V23.2282H36.6818V16.2133L42.3892 23.2282H47.8148L40.1087 14.1552Z" fill="#BF0000"/>
+            <path d="M80.882 5.70972C76.4025 5.70972 73.1885 9.65638 73.1885 14.6885C73.1885 19.978 77.2232 23.6674 81.2704 23.6674C83.3128 23.6674 85.9316 22.9646 88.1244 19.8399L84.7037 17.8634C82.0598 21.7662 77.6492 19.7834 77.1417 15.8807H88.2935C89.2458 9.74423 85.2863 5.70972 80.882 5.70972ZM84.2588 12.4799H77.2858C78.1003 8.48305 83.507 8.25089 84.2588 12.4799Z" fill="#BF0000"/>
+          </g>
+          <defs><clipPath id="clip0_footer"><rect width="104" height="32" fill="white"/></clipPath></defs>
+        </svg>
+      </a>
+      <button class="footer-lang-btn">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0.875C3.61725 0.875 0.875 3.61725 0.875 7C0.875 10.3827 3.61725 13.125 7 13.125C10.3827 13.125 13.125 10.3827 13.125 7C13.125 3.61725 10.3827 0.875 7 0.875ZM7 1.75C7.3885 1.75 7.98044 2.54056 8.36631 3.9375H5.63369C6.01956 2.54056 6.6115 1.75 7 1.75ZM5.4355 4.8125H8.5645C8.65856 5.33706 8.72025 5.92419 8.74081 6.5625H5.25962C5.27975 5.92419 5.34144 5.33706 5.4355 4.8125ZM2.74444 3.9375H4.72937C4.92319 3.15613 5.18744 2.48369 5.50419 1.97006C4.38025 2.30475 3.41556 3.00781 2.74444 3.9375ZM8.49581 1.97006C8.81256 2.48369 9.07681 3.15613 9.27063 3.9375H11.2556C10.5844 3.00781 9.61975 2.30475 8.49581 1.97006ZM1.77222 6.5625H4.38453C4.40334 5.94956 4.45978 5.36244 4.5499 4.8125H2.23378C1.98397 5.35325 1.8234 5.94169 1.77222 6.5625ZM12.2277 6.5625H9.61581C9.597 5.94956 9.54012 5.36244 9.45 4.8125H11.7666C12.0159 5.35325 12.1765 5.94169 12.2277 6.5625ZM1.77222 7.4375C1.8234 8.05788 1.98397 8.64675 2.23378 9.1875H4.5499C4.45978 8.63756 4.40334 8.05044 4.38453 7.4375H1.77222ZM5.25962 7.4375H8.74081C8.72025 8.07538 8.65856 8.66294 8.5645 9.1875H5.4355C5.34144 8.66294 5.27975 8.07538 5.25962 7.4375ZM9.61581 7.4375H12.2277C12.1765 8.05788 12.0159 8.64675 11.7666 9.1875H9.45C9.54012 8.63756 9.597 8.05044 9.61581 7.4375ZM5.63369 10.0625H8.36631C7.98044 11.4594 7.3885 12.25 7 12.25C6.6115 12.25 6.01956 11.4594 5.63369 10.0625ZM4.72937 10.0625H2.74444C3.41556 10.9922 4.38025 11.6948 5.50419 12.0299C5.18744 11.5163 4.92319 10.8439 4.72937 10.0625ZM9.27063 10.0625C9.07681 10.8439 8.81256 11.5163 8.49581 12.0299C9.61975 11.6948 10.5844 10.9922 11.2556 10.0625H9.27063Z" fill="#717171"/>
+        </svg>
+        Language
+      </button>
+      <p class="footer-copyright">© Rakuten Group, Inc.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

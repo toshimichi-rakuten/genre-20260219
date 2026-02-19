@@ -192,13 +192,13 @@
             </div>
 
             <div class="button-grid">
-                <a href="itemlist/sample-products.html" class="nav-card component-card">
+                <a href="products.shtml" class="nav-card component-card">
                     <div class="card-header">
-                        <div class="card-icon">📦</div>
-                        <div class="card-title">商品アイテム</div>
+                        <div class="card-icon">🔲</div>
+                        <div class="card-title">商品グリッドコンポーネント</div>
                     </div>
                     <div class="card-description">
-                        Alcor商品データを表示するための、グリッドレイアウト用アイテムカードコンポーネント。
+                        Alcor商品データを使用した商品グリッド表示コンポーネント。ECM Alcorテンプレートを活用。
                     </div>
                     <div class="card-footer">
                         <span class="preview-link">View Component</span>
@@ -215,13 +215,39 @@
             </div>
 
             <div class="button-grid">
-                <a href="products.shtml" class="nav-card">
+                <a href="20251112_pc_index.html" class="nav-card">
                     <div class="card-header">
                         <div class="card-icon">📄</div>
-                        <div class="card-title">商品一覧ページ</div>
+                        <div class="card-title">PC版インデックス</div>
                     </div>
                     <div class="card-description">
-                        ヘッダー、フッターを含み、商品グリッドを表示する完全なページ構成のプレビュー。
+                        楽天市場ジャンルページのPCレイアウトテンプレート。ECMコンポーネントを使用した構成。
+                    </div>
+                    <div class="card-footer">
+                        <span class="preview-link">View Page</span>
+                    </div>
+                </a>
+
+                <a href="combined_pc_products.html" class="nav-card">
+                    <div class="card-header">
+                        <div class="card-icon">🎨</div>
+                        <div class="card-title">Figmaデザイン実装ページ</div>
+                    </div>
+                    <div class="card-description">
+                        Figmaデザインを完全実装した楽天市場風ページ。ヘッダー、看板、2列・3列商品グリッド、ジャンルフッター、共通フッターを含む完全版。
+                    </div>
+                    <div class="card-footer">
+                        <span class="preview-link">View Page</span>
+                    </div>
+                </a>
+
+                <a href="pc_index_with_products.html" class="nav-card">
+                    <div class="card-header">
+                        <div class="card-icon">📋</div>
+                        <div class="card-title">シンプル統合ページ</div>
+                    </div>
+                    <div class="card-description">
+                        ECMテンプレート（PC版インデックス）と商品グリッドを統合したシンプルなページ。Alcor商品データを使用。
                     </div>
                     <div class="card-footer">
                         <span class="preview-link">View Page</span>
