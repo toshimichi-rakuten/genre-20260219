@@ -1,65 +1,234 @@
-<!--#include virtual="/includes/header.html" -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トップページ - プロジェクト一覧</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-muted: #666666;
+            --border-color: #eaeaea;
+        }
 
-<!--#include virtual="/includes/navigation.html" -->
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div class="container">
-    <h2>SSI（Server Side Includes）サンプルページ</h2>
-    
-    <section style="background-color: #fff5f5; padding: 20px; border-left: 4px solid #e60012; margin-bottom: 20px;">
-        <h3>SSI基本情報</h3>
-        <p>このページは、Server Side Includes（SSI）を使用して構築されています。</p>
-        <ul>
-            <li>ヘッダー部分: <code>includes/header.html</code></li>
-            <li>ナビゲーション部分: <code>includes/navigation.html</code></li>
-            <li>フッター部分: <code>includes/footer.html</code></li>
-        </ul>
-    </section>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 60px 20px;
+        }
 
-    <section style="background-color: #f5f9ff; padding: 20px; border-left: 4px solid #0066cc; margin-bottom: 20px;">
-        <h3>SSIディレクティブの例</h3>
-        
-        <h4>1. ファイルのインクルード</h4>
-        <pre style="background-color: #f5f5f5; padding: 10px; overflow-x: auto;"><code>&lt;!--#include virtual="/includes/header.html" --&gt;</code></pre>
-        
-        <h4>2. 変数の表示</h4>
-        <p>現在の日時: <strong><!--#echo var="DATE_LOCAL" --></strong></p>
-        <p>ドキュメント名: <strong><!--#echo var="DOCUMENT_NAME" --></strong></p>
-        <p>ドキュメントURI: <strong><!--#echo var="DOCUMENT_URI" --></strong></p>
-        
-        <h4>3. 条件分岐の例</h4>
-        <pre style="background-color: #f5f5f5; padding: 10px; overflow-x: auto;"><code>&lt;!--#if expr="${DOCUMENT_NAME} = /index.shtml/" --&gt;
-    &lt;p&gt;これはインデックスページです&lt;/p&gt;
-&lt;!--#else --&gt;
-    &lt;p&gt;これはインデックスページではありません&lt;/p&gt;
-&lt;!--#endif --&gt;</code></pre>
-        
-        <h4>4. 実行結果</h4>
-        <!--#if expr="${DOCUMENT_NAME} = /index.shtml/" -->
-        <p style="color: #e60012; font-weight: bold;">✓ これはインデックスページです</p>
-        <!--#else -->
-        <p>これはインデックスページではありません</p>
-        <!--#endif -->
-    </section>
+        .page-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
-    <section style="background-color: #fff9f0; padding: 20px; border-left: 4px solid #ff9900; margin-bottom: 20px;">
-        <h3>SSIを動作させるには</h3>
-        <p>このサンプルを実際に動作させるには、SSIをサポートするウェブサーバーが必要です：</p>
-        
-        <h4>Apacheの場合:</h4>
-        <ol>
-            <li><code>mod_include</code>モジュールを有効化</li>
-            <li><code>.htaccess</code>または設定ファイルに以下を追加:
-                <pre style="background-color: #f5f5f5; padding: 10px; overflow-x: auto;"><code>Options +Includes
-AddType text/html .shtml
-AddOutputFilter INCLUDES .shtml</code></pre>
-            </li>
-        </ol>
-        
-        <h4>開発環境でテストする場合:</h4>
-        <p>npm パッケージ <code>ssi-server</code> を使用できます:</p>
-        <pre style="background-color: #f5f5f5; padding: 10px; overflow-x: auto;"><code>npm install -g ssi-server
-ssi-server -p 3000</code></pre>
-    </section>
-</div>
+        .page-header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
 
-<!--#include virtual="/includes/footer.html" -->
+        .page-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-subtitle {
+            font-size: 16px;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-right: 16px;
+        }
+
+        .section-description {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .nav-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-color: var(--accent-color);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .card-icon {
+            font-size: 24px;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #f0f7ff;
+            border-radius: 8px;
+        }
+
+        .nav-card.component-card .card-icon {
+            background-color: #fff0eb;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .preview-link {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .preview-link::after {
+            content: "→";
+            margin-left: 4px;
+            transition: transform 0.2s;
+        }
+
+        .nav-card:hover .preview-link::after {
+            transform: translateX(4px);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            .section-header {
+                flex-direction: column;
+            }
+
+            .section-description {
+                margin-top: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1 class="page-title">Project Index</h1>
+            <p class="page-subtitle">開発中のコンポーネントとページ一覧</p>
+        </header>
+
+        <!-- コンポーネントセクション -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Components</h2>
+                <p class="section-description">再利用可能なUIパーツ</p>
+            </div>
+
+            <div class="button-grid">
+                <a href="itemlist/sample-products.html" class="nav-card component-card">
+                    <div class="card-header">
+                        <div class="card-icon">📦</div>
+                        <div class="card-title">商品アイテム</div>
+                    </div>
+                    <div class="card-description">
+                        Alcor商品データを表示するための、グリッドレイアウト用アイテムカードコンポーネント。
+                    </div>
+                    <div class="card-footer">
+                        <span class="preview-link">View Component</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ページセクション -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Pages</h2>
+                <p class="section-description">構築済みのページレイアウト</p>
+            </div>
+
+            <div class="button-grid">
+                <a href="products.shtml" class="nav-card">
+                    <div class="card-header">
+                        <div class="card-icon">📄</div>
+                        <div class="card-title">商品一覧ページ</div>
+                    </div>
+                    <div class="card-description">
+                        ヘッダー、フッターを含み、商品グリッドを表示する完全なページ構成のプレビュー。
+                    </div>
+                    <div class="card-footer">
+                        <span class="preview-link">View Page</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
