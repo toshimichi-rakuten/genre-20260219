@@ -1,0 +1,65 @@
+<!--#include virtual="/includes/header.html" -->
+
+<!--#include virtual="/includes/navigation.html" -->
+
+<div class="container">
+    <h2>SSI（Server Side Includes）サンプルページ</h2>
+    
+    <section style="background-color: #fff5f5; padding: 20px; border-left: 4px solid #e60012; margin-bottom: 20px;">
+        <h3>SSI基本情報</h3>
+        <p>このページは、Server Side Includes（SSI）を使用して構築されています。</p>
+        <ul>
+            <li>ヘッダー部分: <code>includes/header.html</code></li>
+            <li>ナビゲーション部分: <code>includes/navigation.html</code></li>
+            <li>フッター部分: <code>includes/footer.html</code></li>
+        </ul>
+    </section>
+
+    <section style="background-color: #f5f9ff; padding: 20px; border-left: 4px solid #0066cc; margin-bottom: 20px;">
+        <h3>SSIディレクティブの例</h3>
+        
+        <h4>1. ファイルのインクルード</h4>
+        <pre style="background-color: #f5f5f5; padding: 10px; overflow-x: auto;"><code>&lt;!--#include virtual="/includes/header.html" --&gt;</code></pre>
+        
+        <h4>2. 変数の表示</h4>
+        <p>現在の日時: <strong><!--#echo var="DATE_LOCAL" --></strong></p>
+        <p>ドキュメント名: <strong><!--#echo var="DOCUMENT_NAME" --></strong></p>
+        <p>ドキュメントURI: <strong><!--#echo var="DOCUMENT_URI" --></strong></p>
+        
+        <h4>3. 条件分岐の例</h4>
+        <pre style="background-color: #f5f5f5; padding: 10px; overflow-x: auto;"><code>&lt;!--#if expr="${DOCUMENT_NAME} = /index.shtml/" --&gt;
+    &lt;p&gt;これはインデックスページです&lt;/p&gt;
+&lt;!--#else --&gt;
+    &lt;p&gt;これはインデックスページではありません&lt;/p&gt;
+&lt;!--#endif --&gt;</code></pre>
+        
+        <h4>4. 実行結果</h4>
+        <!--#if expr="${DOCUMENT_NAME} = /index.shtml/" -->
+        <p style="color: #e60012; font-weight: bold;">✓ これはインデックスページです</p>
+        <!--#else -->
+        <p>これはインデックスページではありません</p>
+        <!--#endif -->
+    </section>
+
+    <section style="background-color: #fff9f0; padding: 20px; border-left: 4px solid #ff9900; margin-bottom: 20px;">
+        <h3>SSIを動作させるには</h3>
+        <p>このサンプルを実際に動作させるには、SSIをサポートするウェブサーバーが必要です：</p>
+        
+        <h4>Apacheの場合:</h4>
+        <ol>
+            <li><code>mod_include</code>モジュールを有効化</li>
+            <li><code>.htaccess</code>または設定ファイルに以下を追加:
+                <pre style="background-color: #f5f5f5; padding: 10px; overflow-x: auto;"><code>Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml</code></pre>
+            </li>
+        </ol>
+        
+        <h4>開発環境でテストする場合:</h4>
+        <p>npm パッケージ <code>ssi-server</code> を使用できます:</p>
+        <pre style="background-color: #f5f5f5; padding: 10px; overflow-x: auto;"><code>npm install -g ssi-server
+ssi-server -p 3000</code></pre>
+    </section>
+</div>
+
+<!--#include virtual="/includes/footer.html" -->
