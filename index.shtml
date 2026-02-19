@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トップページ - プロジェクト一覧</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-muted: #666666;
+            --border-color: #eaeaea;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,136 +22,157 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 60px 20px;
         }
 
         .page-container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         .page-header {
+            margin-bottom: 60px;
             text-align: center;
-            color: white;
-            margin-bottom: 50px;
         }
 
         .page-title {
-            font-size: 48px;
+            font-size: 32px;
             font-weight: 700;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
 
         .page-subtitle {
-            font-size: 18px;
-            opacity: 0.95;
+            font-size: 16px;
+            color: var(--text-muted);
+            font-weight: 400;
         }
 
         .section {
-            background: white;
-            border-radius: 16px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
         }
 
         .section-title {
-            font-size: 28px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 24px;
-            padding-bottom: 12px;
-            border-bottom: 3px solid #667eea;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-right: 16px;
         }
 
         .section-description {
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 16px;
-            line-height: 1.6;
+            font-size: 14px;
+            color: var(--text-muted);
         }
 
         .button-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
         }
 
         .nav-card {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            border-radius: 12px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
             padding: 24px;
             text-decoration: none;
-            color: #333;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            color: var(--text-color);
+            transition: all 0.2s ease;
             display: flex;
             flex-direction: column;
+            height: 100%;
         }
 
         .nav-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
-            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-color: var(--accent-color);
         }
 
-        .nav-card.component-card {
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-        }
-
-        .nav-card.component-card:hover {
-            border-color: #fcb69f;
-            box-shadow: 0 8px 24px rgba(252, 182, 159, 0.3);
-        }
-
-        .card-icon {
-            font-size: 36px;
+        .card-header {
+            display: flex;
+            align-items: center;
             margin-bottom: 12px;
         }
 
+        .card-icon {
+            font-size: 24px;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #f0f7ff;
+            border-radius: 8px;
+        }
+
+        .nav-card.component-card .card-icon {
+            background-color: #fff0eb;
+        }
+
         .card-title {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 600;
-            margin-bottom: 8px;
+            color: var(--primary-color);
         }
 
         .card-description {
             font-size: 14px;
-            color: #555;
-            line-height: 1.5;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
         }
 
-        .preview-badge {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-top: auto;
-            align-self: flex-start;
+        }
+
+        .preview-link {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .preview-link::after {
+            content: "→";
+            margin-left: 4px;
+            transition: transform 0.2s;
+        }
+
+        .nav-card:hover .preview-link::after {
+            transform: translateX(4px);
         }
 
         @media (max-width: 768px) {
-            .page-title {
-                font-size: 32px;
+            body {
+                padding: 40px 20px;
             }
 
-            .section {
-                padding: 24px;
+            .section-header {
+                flex-direction: column;
             }
 
-            .section-title {
-                font-size: 24px;
-            }
-
-            .button-grid {
-                grid-template-columns: 1fr;
+            .section-description {
+                margin-top: 8px;
             }
         }
     </style>
@@ -149,63 +180,53 @@
 <body>
     <div class="page-container">
         <header class="page-header">
-            <h1 class="page-title">プロジェクト一覧</h1>
-            <p class="page-subtitle">コンポーネントとページのプレビュー</p>
+            <h1 class="page-title">Project Index</h1>
+            <p class="page-subtitle">開発中のコンポーネントとページ一覧</p>
         </header>
 
         <!-- コンポーネントセクション -->
         <section class="section">
-            <h2 class="section-title">📦 コンポーネント</h2>
-            <p class="section-description">
-                再利用可能なUIコンポーネントの一覧です。各コンポーネントをクリックしてプレビューできます。
-            </p>
+            <div class="section-header">
+                <h2 class="section-title">Components</h2>
+                <p class="section-description">再利用可能なUIパーツ</p>
+            </div>
+
             <div class="button-grid">
                 <a href="itemlist/sample-products.html" class="nav-card component-card">
-                    <div class="card-icon">🛍️</div>
-                    <div class="card-title">商品アイテム</div>
-                    <div class="card-description">
-                        Alcor商品データを表示するためのアイテムコンポーネント
+                    <div class="card-header">
+                        <div class="card-icon">📦</div>
+                        <div class="card-title">商品アイテム</div>
                     </div>
-                    <span class="preview-badge">プレビュー</span>
+                    <div class="card-description">
+                        Alcor商品データを表示するための、グリッドレイアウト用アイテムカードコンポーネント。
+                    </div>
+                    <div class="card-footer">
+                        <span class="preview-link">View Component</span>
+                    </div>
                 </a>
-
-                <!-- 今後追加されるコンポーネント用のプレースホルダー -->
-                <!-- 
-                <a href="components/other-component.html" class="nav-card component-card">
-                    <div class="card-icon">🎨</div>
-                    <div class="card-title">その他のコンポーネント</div>
-                    <div class="card-description">説明文</div>
-                    <span class="preview-badge">プレビュー</span>
-                </a>
-                -->
             </div>
         </section>
 
         <!-- ページセクション -->
         <section class="section">
-            <h2 class="section-title">📄 ページ</h2>
-            <p class="section-description">
-                完成したページの一覧です。各ページをクリックして表示内容を確認できます。
-            </p>
+            <div class="section-header">
+                <h2 class="section-title">Pages</h2>
+                <p class="section-description">構築済みのページレイアウト</p>
+            </div>
+
             <div class="button-grid">
                 <a href="products.shtml" class="nav-card">
-                    <div class="card-icon">🛒</div>
-                    <div class="card-title">商品一覧ページ</div>
-                    <div class="card-description">
-                        楽天商品をグリッド表示する商品一覧ページ（Alcor対応）
+                    <div class="card-header">
+                        <div class="card-icon">📄</div>
+                        <div class="card-title">商品一覧ページ</div>
                     </div>
-                    <span class="preview-badge">プレビュー</span>
+                    <div class="card-description">
+                        ヘッダー、フッターを含み、商品グリッドを表示する完全なページ構成のプレビュー。
+                    </div>
+                    <div class="card-footer">
+                        <span class="preview-link">View Page</span>
+                    </div>
                 </a>
-
-                <!-- 今後追加されるページ用のプレースホルダー -->
-                <!-- 
-                <a href="other-page.shtml" class="nav-card">
-                    <div class="card-icon">📱</div>
-                    <div class="card-title">その他のページ</div>
-                    <div class="card-description">説明文</div>
-                    <span class="preview-badge">プレビュー</span>
-                </a>
-                -->
             </div>
         </section>
     </div>
