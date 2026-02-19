@@ -243,11 +243,11 @@
 
                 <a href="combined_pc_products.html" class="nav-card">
                     <div class="card-header">
-                        <div class="card-icon">🛍️</div>
-                        <div class="card-title">統合ページ（PC版+商品グリッド）</div>
+                        <div class="card-icon">🎨</div>
+                        <div class="card-title">Figmaデザイン実装ページ</div>
                     </div>
                     <div class="card-description">
-                        ECMテンプレートと商品グリッドを統合した完全版ページ。ヘッダー、フッター、商品一覧を含む。
+                        Figmaデザインを完全実装した楽天市場風ページ。ヘッダー、看板、2列・3列商品グリッド、ジャンルフッター、共通フッターを含む完全版。
                     </div>
                     <div class="card-footer">
                         <span class="preview-link">View Page</span>
